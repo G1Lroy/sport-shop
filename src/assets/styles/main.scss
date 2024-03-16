@@ -1,12 +1,16 @@
 @import './variables';
 @import './normalize';
 @import './fonts';
+
 @import 'components/header';
 @import 'components/footer';
+@import 'components/layout';
+@import 'components/slider';
 
 
 body {
     font-family: $font;
+    font-size: 14px;
 }
 
 h1,
@@ -19,4 +23,14 @@ h5 {
 
 p {
     line-height: 1.5;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.slider-wrapper{
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 10px;
 }

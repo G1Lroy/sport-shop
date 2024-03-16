@@ -1,0 +1,16 @@
+.slick-prev:before,
+.slick-next:before {
+    content: none !important;
+}
+
+.slick-prev {
+    transform: rotate(180deg) !important;
+}
+
+.slick-active div {
+    background-color: white !important;
+}
+.slick-dots li {
+    width: auto !important;
+    height: auto !important;
+}

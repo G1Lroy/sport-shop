@@ -54,7 +54,8 @@ footer,
 header,
 nav,
 section,
-video {
+video,
+menu {
     margin: 0;
     padding: 0;
     border: 0;
@@ -64,6 +65,11 @@ video {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer,
@@ -101,7 +107,19 @@ table {
     border-spacing: 0;
 }
 
+
+
+button {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
 input {
+    outline: none;
+    border: none;
     -webkit-appearance: none;
     border-radius: 0;
 }
