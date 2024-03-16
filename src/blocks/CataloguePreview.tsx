@@ -1,11 +1,21 @@
-import React from 'react'
+import Button from "../components/Button";
+import prewiev from "./../assets/catalogue-preview.png";
 
-type Props = {}
 
-const CataloguePrewiev = (props: Props) => {
+
+const CataloguePrewiev = () => {
   return (
-    <div>CataloguePrewiev</div>
-  )
-}
+    <div className="catalogue-prewiev">
+      <div className="typography">
+        <h2>Ми знаємо, що сподобається вашим “великим” друзям!</h2>
+        <p>Обирай подарунок своїм друзями бодібілдерам із нашою новою колекцію термобілизни “Big warm”</p>
+        <Button text="До каталогу" variant="dark" />
+      </div>
+      <div className="catalogue-image">
+        <img src={prewiev} />
+      </div>
+    </div>
+  );
+};
 
-export default CataloguePrewiev
+export default CataloguePrewiev;

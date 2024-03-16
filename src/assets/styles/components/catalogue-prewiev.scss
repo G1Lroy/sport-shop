@@ -1,0 +1,21 @@
+.catalogue-prewiev {
+    display: flex;
+    align-items: center;
+
+    .typography {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        justify-content: flex-start;
+    }
+
+    h2 {
+        font-size: $title_2;
+        color: $black_80;
+    }
+
+    p {
+        color: $black_60;
+        max-width: 420px;
+    }
+}

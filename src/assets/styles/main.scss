@@ -6,11 +6,14 @@
 @import 'components/footer';
 @import 'components/layout';
 @import 'components/slider';
+@import 'components/button';
+@import 'components/catalogue-prewiev';
+@import 'components/hot-products';
 
 
 body {
     font-family: $font;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 h1,
@@ -28,9 +31,17 @@ p {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
-.slider-wrapper{
+
+.slider-wrapper-full {
     margin: 0 auto;
     max-width: 1366px;
     padding: 0 10px;
+}
+
+.slider-wrapper-products {
+    width: 1200px;
 }

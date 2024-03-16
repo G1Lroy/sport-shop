@@ -1,7 +1,7 @@
-import logo from "./../assets/Logo.svg";
-import search from "./../assets/search.svg";
-import heart from "./../assets/heart.svg";
-import bag from "./../assets/bag.svg";
+import logo from "./../assets/icons/Logo.svg";
+import search from "./../assets/icons/search.svg";
+import heart from "./../assets/icons/heart.svg";
+import bag from "./../assets/icons/bag.svg";
 
 const menuItems = [
   { link: "#", title: "Новинки" },

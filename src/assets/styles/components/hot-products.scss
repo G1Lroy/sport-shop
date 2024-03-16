@@ -1,0 +1,20 @@
+.hot-products {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h3{
+        font-size: 26px;
+        color: $black_80;
+    }
+}
+
+.pagination{
+    position: absolute;
+    right: 120px;
+    top: 10px;
+}
+
+.card {
+    // width: 370px;
+}

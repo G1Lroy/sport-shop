@@ -1,0 +1,23 @@
+.general-button {
+    width: 165px;
+    height: 50px;
+    border-radius: 15px;
+    color: white;
+    transition: all 50ms ease-in;
+
+    &.dark {
+        background-color: black;
+    }
+
+    &.bright {
+        background-color: $black_60;
+    }
+}
+
+.general-button:hover {
+    transform: scale(0.95);
+}
+
+.general-button:active {
+    background-color: $black_80;
+}
