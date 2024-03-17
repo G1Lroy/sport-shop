@@ -10,14 +10,14 @@ type SliderComponentProps = {
 };
 
 const SliderComponent = ({ content, settings, sliderHeadertext }: SliderComponentProps) => {
-  
   const [currentPage, setCurrentPage] = useState(1);
   const { slidesToScroll } = settings;
 
   const displayPagination = () => {
     return `${currentPage} / ${content.length / slidesToScroll!}`;
   };
-  
+
+  // Cb fn called afterChange "Event" in Slick slider
   const getCurrentSlide = (currentSlide: number) => {
     setCurrentPage(Math.floor(currentSlide / slidesToScroll!) + 1);
   };
@@ -33,7 +33,7 @@ const SliderComponent = ({ content, settings, sliderHeadertext }: SliderComponen
       <div className="pagination">{displayPagination()}</div>
       <Slider {...sliderSettings}>
         {content.map((item, index) => (
-          <div key={index}>{item}</div>
+          <div key={index}> {item}</div>
         ))}
       </Slider>
     </div>

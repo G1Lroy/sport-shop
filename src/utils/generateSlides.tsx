@@ -2,8 +2,8 @@ import { CardT, ReviewT } from "../types";
 
 type GenerateSlidesOptionsT = {
   mockData: CardT[] | ReviewT[]; // etc...
-  ReactComponent: React.ComponentType<any>;
-  numberOfCards: number;
+  ReactComponent: React.ComponentType<any>; 
+  numberOfCards: 9 | 12; 
 };
 
 export const generateSlides = ({ mockData, numberOfCards, ReactComponent }: GenerateSlidesOptionsT): JSX.Element[] => {

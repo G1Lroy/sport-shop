@@ -1,0 +1,21 @@
+.drawer {
+    &-title {
+        color: $black_80;
+        font-weight: 500;
+    }
+
+    &-list {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-list.images {
+        margin-top: 0;
+    }
+
+    &-list-item {
+        color: $black_60
+    }
+}

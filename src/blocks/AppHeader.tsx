@@ -1,11 +1,10 @@
 import logo from "./../assets/icons/Logo.svg";
-
 import heart from "./../assets/icons/heart.svg";
 import bag from "./../assets/icons/bag.svg";
 import SearchForm from "../components/SearchForm";
 import HeaderNav from "../components/HeaderNav";
 
-const menuItems = [
+export const menuItems = [
   { link: "#", title: "Новинки" },
   { link: "#", title: "Чоловіки" },
   { link: "#", title: "Жінки" },
@@ -38,7 +37,7 @@ const AppHeader = () => {
           <a href="#">
             <img className="logo" src={logo} alt="Company logo" />
           </a>
-
+          
           <HeaderNav menuItems={menuItems} />
 
           <div className="search">

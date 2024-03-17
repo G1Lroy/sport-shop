@@ -1,5 +1,40 @@
-footer{
-    background-color: #1c1c1c;
-    color: #fff;
-    text-align: center;
+footer {
+
+    border-top: 1px solid $black_60;
+
+    .footer-main {
+        padding: 46px 98px 52px 98px;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .social {
+            display: flex;
+            gap: 30px;
+        }
+    }
+
+
+    .footer-external {
+        height: 93px;
+        background: $black_80;
+        color: white;
+
+        .container {
+            height: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            gap: 30px;
+            text-transform: uppercase;
+        }
+
+        .footer-company {
+            font-size: 12px;
+        }
+    }
+
 }
