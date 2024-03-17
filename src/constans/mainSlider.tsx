@@ -8,12 +8,11 @@ export const mainSliderImages = [sliderImage, sliderImage, sliderImage];
 export const mainSliderSetting = {
   dots: true,
   infinite: true,
-  speed: 500,
+  speed: 1500,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
-  cssEase: "linear",
+  autoplaySpeed: 5000,  // 5 sec
   prevArrow: <CustomArrow arrow={arrowBig} />,
   nextArrow: <CustomArrow arrow={arrowBig} />,
   appendDots: (dots: ReactNode) => <ul> {dots} </ul>,

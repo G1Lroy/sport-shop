@@ -5,3 +5,10 @@ export interface CardT {
   specific: string;
   price: number;
 }
+
+export interface ReviewT {
+  avatar: string;
+  raiting: number;
+  userName: string;
+  text: string;
+}

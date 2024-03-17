@@ -1,17 +1,18 @@
-import SliderComponent from "../components/SliderComponent";
-import { Settings } from "react-slick";
+import Slider from "react-slick";
+import { mainSliderImages, mainSliderSetting } from "../constans/mainSlider";
 
-type MainSliderProps = {
-  images: string[];
-  sliderSettings: Settings;
-};
 
-const MainSlider = ({ images, sliderSettings }: MainSliderProps) => {
-  // Create image nodes for slider
-  const sliderContent = images.map((image) => <img src={image} />);
+
+const MainSlider = () => {
   return (
     <div className="slider-wrapper-full">
-      <SliderComponent content={sliderContent} settings={sliderSettings} />
+      <Slider {...mainSliderSetting}>
+        {mainSliderImages.map((item, index) => (
+          <div key={index}>
+            <img src={item} />
+          </div>
+        ))}
+      </Slider>
     </div>
   );
 };

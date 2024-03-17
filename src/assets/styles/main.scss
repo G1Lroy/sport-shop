@@ -2,13 +2,16 @@
 @import './normalize';
 @import './fonts';
 
-@import 'components/header';
-@import 'components/footer';
+@import 'blocks/header';
+@import 'blocks/footer';
+@import 'blocks/catalogue-prewiev';
+@import 'blocks/subscribe';
+
 @import 'components/layout';
 @import 'components/slider';
 @import 'components/button';
-@import 'components/catalogue-prewiev';
-@import 'components/hot-products';
+@import 'components/product-card';
+@import 'components/review-card';
 
 
 body {
@@ -44,4 +47,16 @@ p {
     margin: 0 auto;
     max-width: 1366px;
     padding: 0 10px;
+}
+
+.slider-wrapper-products {
+    width: 1200px;
+
+    // slider images bugging
+    padding-right: 5px;
+}
+
+.customer-reviews {
+    margin-bottom: 160px;
+    padding-right: 0;
 }

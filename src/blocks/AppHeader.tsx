@@ -1,7 +1,9 @@
 import logo from "./../assets/icons/Logo.svg";
-import search from "./../assets/icons/search.svg";
+
 import heart from "./../assets/icons/heart.svg";
 import bag from "./../assets/icons/bag.svg";
+import SearchForm from "../components/SearchForm";
+import HeaderNav from "../components/HeaderNav";
 
 const menuItems = [
   { link: "#", title: "Новинки" },
@@ -37,23 +39,10 @@ const AppHeader = () => {
             <img className="logo" src={logo} alt="Company logo" />
           </a>
 
-          <nav>
-            <ul className="nav">
-              {menuItems.map((item) => (
-                <li key={item.title}>
-                  <a href={item.link}>{item.title}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
+          <HeaderNav menuItems={menuItems} />
 
           <div className="search">
-            <form onSubmit={(e) => e.preventDefault()}>
-              <button type="submit">
-                <img src={search} />
-              </button>
-              <input type="text" />
-            </form>
+            <SearchForm />
             <img src={heart} />
             <img src={bag} />
           </div>

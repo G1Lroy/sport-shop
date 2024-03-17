@@ -12,16 +12,16 @@
 .slider-wrapper-full {
 
     .slick-active div {
-        background-color: white !important;
+        background-color: white;
     }
 
     .slick-dots li {
-        width: auto !important;
-        height: auto !important;
+        width: auto;
+        height: auto;
     }
 
     .slick-dots {
-        bottom: 20px !important;
+        bottom: 20px;
     }
 
     .main-slider-dots {
@@ -64,4 +64,22 @@
         top: -46px;
     }
 
+}
+// Slider COMPONENT
+.slider-holder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h3 {
+        font-size: 26px;
+        color: $black_80;
+    }
+
+    .pagination {
+        position: absolute;
+        right: 120px;
+        top: 10px;
+    }
 }
