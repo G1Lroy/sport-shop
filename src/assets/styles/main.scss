@@ -16,6 +16,10 @@ body {
     font-size: 16px;
 }
 
+*:focus-visible {
+    outline: none;
+}
+
 h1,
 h2,
 h3,
@@ -40,8 +44,4 @@ p {
     margin: 0 auto;
     max-width: 1366px;
     padding: 0 10px;
-}
-
-.slider-wrapper-products {
-    width: 1200px;
 }

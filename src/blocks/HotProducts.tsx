@@ -5,19 +5,19 @@ import { useState } from "react";
 import { CardT } from "../types";
 
 type HotProductsProps = {
-  cards: CardT[];
+  products: CardT[];
   sliderSettings: Settings;
 };
 
-const HotProducts = ({ cards, sliderSettings }: HotProductsProps) => {
+const HotProducts = ({ products, sliderSettings }: HotProductsProps) => {
   const [currentPage, setCurrentPage] = useState(1);
 
   // CREATE product cards[] for slider, from Mock products object
-  const sliderContent = cards.map((card) => <ProductCard card={card} />);
-  
+  const sliderContent = products.map((card) => <ProductCard card={card} />);
+
   // Update curr page after scrol slide
   const afterChange = (currentSlide: number) => setCurrentPage(Math.floor(currentSlide / 3) + 1);
-  const displayPagination = () => `${currentPage} / ${cards.length / 3}`;
+  const displayPagination = () => `${currentPage} / ${products.length / 3}`;
 
   return (
     <div className="hot-products">

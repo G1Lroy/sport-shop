@@ -1,7 +1,7 @@
-export type CardT = {
+export interface CardT {
   img: string;
   title: string;
-  useability: "male" | "female" | "accessory";
-  specific: number | string;
+  useability: string;
+  specific: string;
   price: number;
-};
+}
