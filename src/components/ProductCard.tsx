@@ -7,16 +7,16 @@ type ProductCardProps = {
 
 const ProductCard = ({ card }: ProductCardProps) => {
   return (
-    <div className="card">
+    <div className="product">
       <img src={card.img} title={card.title} alt={card.title} />
       <button className="like-button">
         <img src={like} />
       </button>
-      <div className="card-description">
-        <h4 className="card-title">{card.title}</h4>
-        <p className="card-useability">{card.useability}</p>
-        <p className="card-colors">{card.specific}</p>
-        <p className="card-price">{card.price} грн.</p>
+      <div className="product-description">
+        <h4 className="product-title">{card.title}</h4>
+        <p className="product-useability">{card.useability}</p>
+        <p className="product-colors">{card.specific}</p>
+        <p className="product-price">{card.price} грн.</p>
       </div>
     </div>
   );

@@ -7,3 +7,29 @@
         flex: 1;
     }
 }
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+// Slider wrappers
+.slider-wrapper-full {
+    margin: 0 auto;
+    max-width: 1366px;
+    padding: 0 10px;
+}
+
+.slider-wrapper-products {
+    width: 1200px; // need for correct width
+    // slider images bugging
+    padding-right: 5px;
+}
+
+.slider-wrapper-reviews {
+    width: 1200px;
+    padding-right: 0;
+}

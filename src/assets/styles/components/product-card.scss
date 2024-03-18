@@ -1,4 +1,4 @@
-.card {
+.product {
     position: relative;
 
     .like-button {
@@ -10,10 +10,6 @@
 
     .like-button:hover {
         transform: scale(0.96);
-    }
-
-    a:focus-visible {
-        text-decoration: none;
     }
 
     &-description {

@@ -1,14 +1,13 @@
+//Slider default arrows
 .slick-prev:before,
 .slick-next:before {
     content: none !important;
 }
-
 .slick-prev {
     transform: rotate(180deg) !important;
 }
 
-// MAIN SLIDER
-
+// images slider 
 .slider-wrapper-full {
 
     .slick-active div {
@@ -42,8 +41,28 @@
     }
 }
 
-// PRODUCT SLIDER
-.slider-wrapper-products {
+
+// Slider component
+.slider-holder {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h3 {
+        font-size: 26px;
+        color: $black_80;
+    }
+
+    .pagination {
+        position: absolute;
+        right: 120px;
+        top: 10px;
+    }
+}
+// Slider component ARROWS
+.slider-wrapper-products,
+.slider-wrapper-reviews {
 
     .slick-prev,
     .slick-next {
@@ -64,22 +83,4 @@
         top: -46px;
     }
 
-}
-// Slider COMPONENT
-.slider-holder {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-
-    h3 {
-        font-size: 26px;
-        color: $black_80;
-    }
-
-    .pagination {
-        position: absolute;
-        right: 120px;
-        top: 10px;
-    }
 }

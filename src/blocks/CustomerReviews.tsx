@@ -22,7 +22,7 @@ const CustomerReviews = () => {
   });
 
   return (
-    <div className="slider-wrapper-products customer-reviews">
+    <div className="slider-wrapper-reviews">
       <SliderComponent
         content={sliderContent}
         settings={rewievsSliderSettings}

@@ -13,6 +13,7 @@
 @import 'components/product-card';
 @import 'components/review-card';
 @import 'components/list-drawer';
+@import 'components/subscribe-form';
 
 
 body {
@@ -20,7 +21,7 @@ body {
     font-size: 16px;
 }
 
-*:focus-visible {
+a:focus-visible {
     outline: none;
 }
 
@@ -34,30 +35,4 @@ h5 {
 
 p {
     line-height: 1.5;
-}
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-}
-
-.slider-wrapper-full {
-    margin: 0 auto;
-    max-width: 1366px;
-    padding: 0 10px;
-}
-
-.slider-wrapper-products {
-    width: 1200px;
-
-    // slider images bugging
-    padding-right: 5px;
-}
-
-.customer-reviews {
-    margin-bottom: 160px;
-    padding-right: 0;
 }

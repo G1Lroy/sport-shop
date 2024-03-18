@@ -1,8 +1,6 @@
 import Slider from "react-slick";
 import { mainSliderImages, mainSliderSetting } from "../constans/mainSlider";
 
-
-
 const MainSlider = () => {
   return (
     <div className="slider-wrapper-full">

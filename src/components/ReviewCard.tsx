@@ -13,7 +13,7 @@ const ReviewCard = ({ card }: ReviewCardProps) => {
         <img className="review-avatar" src={card.avatar} title={card.userName} alt={card.userName} />
         <div>
           <div className="review-raiting">
-            {/*card.raiting*/}
+            {/*card.raiting for static*/}
             <RatingDrawer rating={Math.floor(Math.random() * 5)} />
           </div>
           <div className="review-user-name">{card.userName}</div>
